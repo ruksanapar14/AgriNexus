@@ -1,7 +1,6 @@
 import {
   Clock3,
   Sprout,
-  Droplets,
   IndianRupee,
   AlertTriangle,
 } from "lucide-react";

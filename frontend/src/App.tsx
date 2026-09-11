@@ -18,7 +18,8 @@ type Page =
   | "results"
   | "comparison"
   | "analytics"
-  | "history";
+  | "history"
+  | "advisor";
 
 function App() {
   const [activePage, setActivePage] =
@@ -55,6 +56,9 @@ function App() {
       case "history":
         return <History />;
 
+      case "advisor":
+        return <Dashboard />;
+
       case "simulation":
         return <Scenarios />;
 
@@ -70,7 +74,6 @@ function App() {
 
   return (
     <div className="flex h-screen overflow-hidden bg-[#07110d] text-white">
-
       <Sidebar
         activePage={activePage}
         setActivePage={setActivePage}
@@ -81,7 +84,6 @@ function App() {
           {renderPage()}
         </div>
       </main>
-
     </div>
   );
 }

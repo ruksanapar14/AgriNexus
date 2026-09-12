@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Sidebar from "./components/Sidebar";
 
+import Advisor from "./pages/Advisor";
 import Dashboard from "./pages/Dashboard";
 import CreateFarm from "./pages/CreateFarm";
 import Scenarios from "./pages/Scenarios";
@@ -57,7 +58,7 @@ function App() {
         return <History />;
 
       case "advisor":
-        return <Dashboard />;
+        return <Advisor />;
 
       case "simulation":
         return <Scenarios />;

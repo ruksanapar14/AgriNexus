@@ -50,7 +50,7 @@ export default function Comparison() {
       const updated = await Promise.all(
         scenarios.map(async (scenario) => {
           const response = await fetch(
-            "http://127.0.0.1:8000/simulate",
+            "https://agrinexus-77by.onrender.com/simulate",
             {
               method: "POST",
               headers: {

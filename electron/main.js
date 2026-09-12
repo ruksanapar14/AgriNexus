@@ -14,7 +14,7 @@ function createWindow() {
     },
   });
 
-  win.loadURL("http://localhost:5174");
+  win.loadURL("https://agri-nexus-alpha.vercel.app");
 }
 
 app.whenReady().then(() => {
